@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.pas_genap_7_13"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.pas_genap_7_13"
@@ -32,7 +32,12 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.google.android.material:material:1.11.0")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
